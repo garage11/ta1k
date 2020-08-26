@@ -71,7 +71,6 @@ export default class Client {
     }
 
     async onMessage(event) {
-        console.log(event)
         const resp = JSON.parse(event.data)
 
         // Listen for server renegotiation notifications

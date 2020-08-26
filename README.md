@@ -7,9 +7,10 @@ This is a quick tech-demo of Pion WebRTC. It expects Ion-SFU to run.
 * Build [ion-sfu](https://github.com/pion/ion-sfu) and run in a separate tab
 
   ```bash
-  git@github.com:pion/ion-sfu.git
+  git clone git@github.com:pion/ion-sfu.git
   cd ion-sfu
-  go build ./cmd/server/grpc/main.go && ./main -c config.toml
+  go build cmd/server/json-rpc/main.go
+  ./main -c config.toml -a ":7000"
   ```
 
 * Run the demo
