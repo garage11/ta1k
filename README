@@ -1,0 +1,19 @@
+# Push-To-Talk
+This is a minimal push-to-talk demo, built on top of [ion-sfu](https://github.com/pion/ion-sfu/).
+
+## Install
+
+* Build ion-sfu
+
+    git@github.com:pion/ion-sfu.git
+    cd ion-sfu
+    go build ./cmd/server/grpc/main.go && ./main -c config.toml
+
+* Checkout this demo
+
+    git clone git@github.com:garage11/ta1k.git
+    cd ta1k
+    yarn
+    ./cli watch
+
+
