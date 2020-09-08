@@ -8,5 +8,29 @@
     },
     "files.associations": {
         "*.vue": "vue-html"
+     },
+     "go.autocompleteUnimportedPackages": true,
+     "go.useLanguageServer": true,
+     "[go]": {
+         "editor.snippetSuggestions": "none",
+         "editor.formatOnSave": true,
+         "editor.codeActionsOnSave": {
+             "source.organizeImports": true
+         }
+     },
+     "gopls": {
+         "usePlaceholders": true,
+         "wantCompletionDocumentation": true,
+     },
+     "go.toolsEnvVars": {
+     },
+     "go.languageServerFlags": [
+         "-rpc.trace",
+         "serve",
+         "--debug=localhost:6060",
+     ],
+     "go.enableCodeLens": {
+         "references": true,
+         "runtest": true
      }
 }
